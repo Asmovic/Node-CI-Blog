@@ -1,2 +1,2 @@
 # AdvancedNodeStarter
-Advanced Blog with CI Integrations
+Advanced Blog with CI Integrations.
