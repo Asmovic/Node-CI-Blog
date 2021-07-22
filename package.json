@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./tests/setup.js"
+    ]
+  },
   "scripts": {
     "start": "node index.js",
+    "test": "jest --detectOpenHandles",
     "server": "nodemon index.js --ignore tests",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
@@ -19,14 +25,14 @@
     "concurrently": "^3.5.0",
     "cookie-session": "^2.0.0-beta.2",
     "express": "^4.15.3",
-    "jest": "^22.1.4",
+    "jest": "^27.0.6",
     "migrate-mongoose": "^3.2.2",
     "mongoose": "^4.11.1",
     "nodemon": "^1.11.0",
     "passport": "^0.3.2",
     "passport-google-oauth20": "^2.0.0",
     "path-parser": "^2.0.2",
-    "puppeteer": "^1.0.0",
+    "puppeteer": "^10.1.0",
     "redis": "^2.8.0",
     "uuid": "^3.2.1"
   }
